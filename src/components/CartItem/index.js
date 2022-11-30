@@ -27,6 +27,8 @@ const CartItem = props => (
       const onDecrementQty = () => {
         if (quantity > 1) {
           decrementCartItemQuantity(id)
+        } else {
+          removeCartItem(id)
         }
       }
 
